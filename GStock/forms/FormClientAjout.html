@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+</head>
+<body>
+
+
+Ajout client
+<form action="../action/ClientAction.php" method="post">
+<p>
+    <input type="text" name="id"  />
+    <input type="text" name="raisonSocial" />
+    <input type="text" name="nom" />
+    <input type="text" id ="prenom" name="prenom" />
+    <span id='missPrenom'></span><br>
+    <input type="text" name="adresse" />
+    <input type="text" name="ville" />
+    <input type="text" name="codePostal" />
+    <input type="text" name="pays" />
+    <input type="text" name="telephone" />
+    <input type="text" name="fax" />
+    <input type="text" name="mail" />
+    <input type="hidden" name="action"  value="AJ"/>
+    <input type='submit' value='Valider' id='bouton_envoi'>
+</p>
+
+<p><a href="../index.html"> Retour page principale </a></p>
+</form>
+
+        <script>
+            var formValid = document.getElementById('bouton_envoi');
+            var prenom = document.getElementById('prenom');
+            var missPrenom = document.getElementById('missPrenom');
+            
+            formValid.addEventListener('click', validation);
+            
+            function validation(event){
+                //Si le champ est vide
+                if (prenom.validity.valueMissing){
+                    event.preventDefault();
+                    missPrenom.textContent = 'Prénom manquant';
+                    missPrenom.style.color = 'red';
+                }
+            }
+        </script>
+</body>
+</html>
