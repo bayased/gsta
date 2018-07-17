@@ -2,25 +2,68 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Gestion de Stock</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-<p><a href="forms/FormEntreeAjout.html"> Ajouter une entrée</a></p>
+  <h2>Gestion Stock Electronique</h2>
+<ul class="accordion-menu">
+  <li>
+    <div class="dropdownlink"><i class="fa fa-road" aria-hidden="true"></i> Gestion d'entree
+      <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </div>
+    <ul class="submenuItems">
+      <li><a href="forms/FormMarqueAjout.html">Ajouter une entree</a></li>
+      <li><a href="#">sous menu 2</a></li>
+      <li><a href="#">sous menu 3</a></li>
+    </ul>
+  </li>
+  <li>
+    <div class="dropdownlink"><i class="fa fa-paper-plane" aria-hidden="true"></i> Gestion Marque
+      <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </div>
+    <ul class="submenuItems">
+      <li><a href="forms/FormMarqueAjout.html">Ajouter une marque</a></li>
+      <li><a href="forms/FormMarqueModif.html"> Modifier une marque</a></li>
+      <li><a href="forms/ListeMarque.php"> liste des marques</a></li>
+    </ul>
+  </li>
+  <li>
+    <div class="dropdownlink"><i class="fa fa-quote-left" aria-hidden="true"></i> Gestion Model
+      <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </div>
+    <ul class="submenuItems">
+      <li><a href="forms/FormModelAjout.html"> Ajouter un modele</a></li>
+      <li><a href="forms/FormModelModif.html"> Modifier un modele</a></li>
+      <li><a href="#">Fantasy book 3</a></li>
+    </ul>
+  </li>
+  <li>
+    <div class="dropdownlink"><i class="fa fa-motorcycle" aria-hidden="true"></i> Gestion categorie
+      <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </div>
+    <ul class="submenuItems">
+      <li><a href="forms/FormCategorieAjout.html"> Ajouter une categorie</a></li>
+      <li><a href="forms/FormCategorieModif.html"> Modifier une categorie</a></li>
+      <li><a href="#">Action book 3</a></li>
+    </ul>
+  </li>
+    <li>
+    <div class="dropdownlink"><i class="fa fa-motorcycle" aria-hidden="true"></i> Gestion Client
+      <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </div>
+    <ul class="submenuItems">
+      <li><a href="forms/FormClientAjout.html"> Ajouter un client</a></li>
+      <li><a href="forms/FormClientModif.html"> Modifier un client</a></li>
+      <li><a href="#">Lister les cleints</a></li>
+    </ul>
+  </li>
+</ul>
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
 
-<p><a href="forms/FormMarqueAjout.html"> Ajouter une marque</a></p>
-<p><a href="forms/FormMarqueModif.html"> Modifier une marque</a></p>
-<p><a href="forms/ListeMarque.php"> liste des marques</a></p>
+    <script src="js/index.js"></script>
 
-<p><a href="forms/FormModelAjout.html"> Ajouter un modele</a></p>
-<p><a href="forms/FormModelModif.html"> Modifier un modele</a></p>
-
-
-<p><a href="forms/FormCategorieAjout.html"> Ajouter une categorie</a></p>
-<p><a href="forms/FormCategorieModif.html"> Modifier une categorie</a></p>
-
-<p><a href="forms/FormClientAjout.html"> Ajouter un client</a></p>
-<p><a href="forms/FormClientModif.html"> Modifier un client</a></p>
-
-<p><a href="index.html"> Home page </a></p>
+</body>
 </body>
 </html>
