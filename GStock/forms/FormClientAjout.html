@@ -10,23 +10,34 @@
 
 Ajout client
 <form action="../action/ClientAction.php" method="post">
-<p>
-    <input type="text" name="id"  />
-    <input type="text" name="raisonSocial" />
-    <input type="text" name="nom" />
-    <input type="text" id ="prenom" name="prenom" />
-    <span id='missPrenom'></span><br>
-    <input type="text" name="adresse" />
-    <input type="text" name="ville" />
-    <input type="text" name="codePostal" />
-    <input type="text" name="pays" />
-    <input type="text" name="telephone" />
-    <input type="text" name="fax" />
-    <input type="text" name="mail" />
+
+   <div> <label for="id"> id :</label>
+   <input type="text" name="id" disabled="disabled" /></div>
+   <div> <label for="raisonSocial"> Raison social :</label>
+   <input type="text" name="raisonSocial" /></div>
+    <div>
+    <label for="nom"> Nom :</label><input type="text" name="nom" /></div>
+    <div><label for="prenoml"> Prenom :</label>
+    <input type="text" id ="prenom" name="prenom" /></div>
+    <div><label for="adresse"> Adresse :</label>
+    <input type="text" name="adresse" /></div>
+    <div><label for="ville"> Ville :</label>
+    <input type="text" name="ville" /></div>
+    <div><label for="codePostal"> Code postal :</label>
+    <input type="text" name="codePostal" /></div>
+    <div><label for="pays"> pays :</label>
+    <input type="text" name="pays" /></div>
+    <div>
+    <label for="telephone"> téléphone :</label> 
+    <input type="text" name="telephone" /></div>
+    <div><label for="fax"> Fax :</label> 
+    <input type="text" name="fax" /></div>
+    <div>
+    <label for="mail"> Mail :</label>
+    <input type="text" name="mail" /></div>
     <input type="hidden" name="action"  value="AJ"/>
     <input type='submit' value='Valider' id='bouton_envoi'>
-</p>
-
+ <span id='missPrenom'></span><br>
 <p><a href="../index.html"> Retour page principale </a></p>
 </form>
 

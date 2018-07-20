@@ -1,13 +1,6 @@
 <?php
 
 
-
-
-
-
-
-
-
   class Entree  {
   
   	private  $idEntree;
