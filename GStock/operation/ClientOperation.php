@@ -15,13 +15,15 @@
   }
   
   
-  public  function ajouter($id,$raisonSocial,$nom,$prenom,$adresse,$ville,$codePostal,$pays,$telephone,$fax,$mail){
+  public  function ajouter($raisonSocial,$nom,$prenom,$adresse,$ville,$codePostal,$pays,$telephone,$fax,$mail){
   	
   	require_once('../utils/ClasseBDDMysql.php');
   	$monObjetBDD= new ClasseBDDMysql();
   	$monObjetBDD->connect();
-  	$monObjetBDD->executerSql("insert into client values (".$id.",'".$raisonSocial."','".$nom."','".$prenom."','".$adresse."',
-								'".$ville."','".$codePostal."','".$pays."','".$telephone."','".$fax."','".$mail."')");
+  	$sql="insert into client ( raison_social ,nom,prenom,adresse,ville,code_postal,pays,telephone,fax,mail)  values ('".$raisonSocial."','".$nom."','".$prenom."','".$adresse."',
+								'".$ville."','".$codePostal."','".$pays."','".$telephone."','".$fax."','".$mail."')";
+  	//echo($sql);
+  	$monObjetBDD->executerSql($sql);
   	
   }
 }

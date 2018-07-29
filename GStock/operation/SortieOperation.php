@@ -1,19 +1,20 @@
 <?php
 
 
-class EntreeOperation  {
+class SortieOperation  {
 	
 	public  function __construct() {}
 	
 	
-	public  function ajouter($idFournisseur,$dateEntree){
+	public  function ajouter($idclient,$datesortie){
 		
 		require_once('../utils/ClasseBDDMysql.php');
 		$monObjetBDD= new ClasseBDDMysql();
 		$monObjetBDD->connect();
-		$sql="insert into entree (idfournisseur,date_entree) values (".$idFournisseur.",'".$dateEntree."')";
+		$sql ="insert into sortie (idclient,date_sortie) values (".$idclient.",'".$datesortie."')";
 		echo($sql);
 		$monObjetBDD->executerSql($sql);
 		
 	}
 }
+
