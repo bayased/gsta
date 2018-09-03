@@ -16,4 +16,13 @@ class EntreeOperation  {
 		$monObjetBDD->executerSql($sql);
 		
 	}
+	public  function lister(){
+		
+		require_once('../utils/ClasseBDDMysql.php');
+		$monObjetBDD= new ClasseBDDMysql();
+		$monObjetBDD->connect();
+		$resultat =$monObjetBDD->executerSql("select identree ,idfournisseur,date_entree from entree");
+		return $resultat;
+		
+	}
 }
