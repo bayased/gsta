@@ -1,25 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Gestion de Stock</title>
-<link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-  <h2>Gestion de Stock </h2>
-<table style="width:100%" border=1> 
-<tr>
-<td style="width:30%">
 <ul class="accordion-menu">
   <li>
     <div class="dropdownlink"><i class="fa fa-road" aria-hidden="true"></i> Gestion d'entree
       <i class="fa fa-chevron-down" aria-hidden="true"></i>
     </div>
     <ul class="submenuItems">
-      <li><a href="forms/FormEntreeAjout.php">Ajouter une entree</a></li>
-      <li><a href="forms/FormEntreeModif.php">Modifier une entree</a></li>
-            <li><a href="forms/ListeEntree.php"> liste des entrées</a></li>
+      <li><a href="../forms/FormEntreeAjout.php">Ajouter une entree</a></li>
+      <li><a href="../forms/FormEntreeModif.php">Modifier une entree</a></li>
+            <li><a href="../forms/ListeEntree.php"> liste des entrÃ©es</a></li>
     </ul>
   </li>
   <li>
@@ -27,9 +14,9 @@
       <i class="fa fa-chevron-down" aria-hidden="true"></i>
     </div>
     <ul class="submenuItems">
-      <li><a href="forms/FormSortieAjout.php">Ajouter une sortie</a></li>
-      <li><a href="forms/FormSortieModif.php"> Modifier une sortie</a></li>
-      <li><a href="forms/ListeSortie.php"> liste des sorties</a></li>
+      <li><a href="../forms/FormSortieAjout.php">Ajouter une sortie</a></li>
+      <li><a href="../forms/FormSortieModif.php"> Modifier une sortie</a></li>
+      <li><a href="../forms/ListeSortie.php"> liste des sorties</a></li>
     </ul>
   </li>
   <li>
@@ -38,9 +25,9 @@
       <i class="fa fa-chevron-down" aria-hidden="true"></i>
     </div>
     <ul class="submenuItems">
-      <li><a href="forms/FormMarqueAjout.php">Ajouter une marque</a></li>
-      <li><a href="forms/FormMarqueModif.php"> Modifier une marque</a></li>
-      <li><a href="forms/ListeMarque.php"> liste des marques</a></li>
+      <li><a href="../forms/FormMarqueAjout.php">Ajouter une marque</a></li>
+      <li><a href="../forms/FormMarqueModif.php"> Modifier une marque</a></li>
+      <li><a href="../forms/ListeMarque.php"> liste des marques</a></li>
     </ul>
   </li>
   <li>
@@ -48,8 +35,8 @@
       <i class="fa fa-chevron-down" aria-hidden="true"></i>
     </div>
     <ul class="submenuItems">
-      <li><a href="forms/FormModelAjout.php"> Ajouter un model</a></li>
-      <li><a href="forms/FormModelModif.php"> Modifier un model</a></li>
+      <li><a href="../forms/FormModelAjout.php"> Ajouter un model</a></li>
+      <li><a href="../forms/FormModelModif.php"> Modifier un model</a></li>
       <li><a href="#">Liste des models</a></li>
     </ul>
   </li>
@@ -58,8 +45,8 @@
       <i class="fa fa-chevron-down" aria-hidden="true"></i>
     </div>
     <ul class="submenuItems">
-      <li><a href="forms/FormCategorieAjout.php"> Ajouter une categorie</a></li>
-      <li><a href="forms/FormCategorieModif.php"> Modifier une categorie</a></li>
+      <li><a href="../forms/FormCategorieAjout.php"> Ajouter une categorie</a></li>
+      <li><a href="../forms/FormCategorieModif.php"> Modifier une categorie</a></li>
       <li><a href="#">Liste des categories</a></li>
     </ul>
   </li>
@@ -68,8 +55,8 @@
       <i class="fa fa-chevron-down" aria-hidden="true"></i>
     </div>
     <ul class="submenuItems">
-      <li><a href="forms/FormClientAjout.php"> Ajouter un client</a></li>
-      <li><a href="forms/FormClientModif.php"> Modifier un client</a></li>
+      <li><a href="../forms/FormClientAjout.php"> Ajouter un client</a></li>
+      <li><a href="../forms/FormClientModif.php"> Modifier un client</a></li>
       <li><a href="#">Liste des clients</a></li>
     </ul>
   </li>
@@ -79,18 +66,12 @@
       <i class="fa fa-chevron-down" aria-hidden="true"></i>
     </div>
     <ul class="submenuItems">
-      <li><a href="forms/FormFournisseurAjout.php"> Ajouter un fournisseur</a></li>
-      <li><a href="forms/FormFournisseurModif.php"> Modifier un fournisseur</a></li>
+      <li><a href="../forms/FormFournisseurAjout.php"> Ajouter un fournisseur</a></li>
+      <li><a href="../forms/FormFournisseurModif.php"> Modifier un fournisseur</a></li>
       <li><a href="#">Liste des fournisseurs</a></li>
     </ul>
   </li>
 </ul>
   <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
 
-    <script src="js/index.js"></script>
-</td>
-<td style="width:70%"> <h2> Bienvenue </h2> </td>
-</tr>
-</table>
-</body>
-</html>
+    <script src="../js/index.js"></script>

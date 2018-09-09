@@ -17,7 +17,7 @@
   	require_once('../utils/ClasseBDDMysql.php');
   	$monObjetBDD= new ClasseBDDMysql();
   	$monObjetBDD->connect();
-  	$monObjetBDD->executerSql("insert into marque values (".$id.",'".$libelle."')");
+  	$monObjetBDD->executerSql("insert into marque values ('','".$libelle."')");
   	
   }
   public  function lister(){

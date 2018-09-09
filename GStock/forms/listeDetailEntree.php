@@ -17,7 +17,7 @@ require_once('../operation/EntreeOperation.php');
 <?php include "../utils/menuG.php"; ?>
 </td>
 <td style="width:70%"> 
-<h2> Liste entree </h2> 
+<h2> Detail entree  <?php echo $_GET['identree'] ?></h2> 
 <?php
 $operation= new EntreeOperation();
 
@@ -26,7 +26,7 @@ $operation= new EntreeOperation();
 // -------------------------------------------------------
 // (exemple)
 
-$result2 =  $operation->lister ();
+$result2 =  $operation->DetailEntree($_GET['identree']);
 // -----------nombre de ligne dans le resultat---------------
 $NbreLigne = mysql_num_rows($result2);
 // -------------------------------------------------------
@@ -35,23 +35,23 @@ $NbreLigne = mysql_num_rows($result2);
 if ($NbreLigne != 0) {
 echo 'Vous avez '.$NbreLigne.' entree <br>' ;
 echo '<table border="1">';
-echo '<tr> <td>ID</td> <td>Fournisseur</td> <td>Date entree</td> <td>Detail</td> </tr>';
+echo '<tr> <td>Marque</td> <td>Modele</td> <td>N° serie</td> <td>Prix unitaire</td> </tr>';
 
 while ($ligne = mysql_fetch_array($result2)) {
 
    echo "<tr>";
    echo '<td>';
-   echo $ligne['identree'];
+   echo $ligne[0];
    echo '</td>';
    echo '<td>';
-   echo $ligne['raison_social'];
+   echo $ligne[1];
    echo '</td>';
    echo '<td>';
-   echo $ligne['date_entree'];
+   echo $ligne[2];
    echo '</td>';
 
-	echo '<td>';
-   echo '<a href="../forms/listeDetailEntree.php?identree='.$ligne['identree'].'">Detail</a>';
+  echo '<td>';
+   echo $ligne[3];
    echo '</td>';
    echo "</tr>"; 
    
