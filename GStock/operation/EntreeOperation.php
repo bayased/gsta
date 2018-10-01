@@ -56,7 +56,7 @@ class EntreeOperation  {
 		
 	}
 
-	public  function DetailEntree($identree){
+	public  function DetailEntree2($identree){
 		
 		require_once('../utils/ClasseBDDMysql.php');
 		$monObjetBDD= new ClasseBDDMysql();
@@ -70,5 +70,23 @@ class EntreeOperation  {
 		return $resultat;
 		
 	}
+	
+		public  function DetailEntree($identree){
+		
+			require_once('../utils/ClasseBDDMysql.php');
+			$monObjetBDD= new ClasseBDDMysql();
+			$monObjetBDD->connect();
+			$sql="select ma.libelle, mo.libelle ,p.numserie, de.prix_unitaire
+			from detail_entree de
+			join produit p on de.idproduit = p.idproduit
+			join modele mo on p.idmodele=mo.idmodele
+			join marque ma on mo.idmarque=ma.idmarque
+			where  de.identree=".$identree."";
+			
+			$resultat =$monObjetBDD->executerSql($sql);
+			return $resultat;
+		
+	}
+
 
 }

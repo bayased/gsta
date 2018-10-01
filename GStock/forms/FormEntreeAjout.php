@@ -17,7 +17,7 @@
 <?php include "../utils/menuG.php"; ?>
 </td>
 <td style="width:70%"> 
-<h2> Ajout entree </h2> 	
+<h2> Ajout Entree </h2> 	
 <form action="../action/EntreeAction.php" method="post">
 
 <div>
